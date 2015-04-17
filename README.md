@@ -3,7 +3,7 @@
 ### What's inside: ###
 
 * Neo4J
-* Python: Flask / scipy
+* Python: Flask / scipy / py2neo
 * JS: Alchemy.js + Alchemys' dependencies
 
 questions/comments: grzegorz-wojcicki@outlook.com
