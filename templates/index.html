@@ -3,25 +3,43 @@
 <head>
     <title>Alchemy.js + Neo4J + Flask</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/vendor.css"/>
-    <link rel="stylesheet" href="/static/css/alchemy.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+        }
+        ul {
+            width: 400px;
+            display: block;
+            margin: 50px auto;
+        }
+        ul > li {
+            font-weight: bolder;
+            font-size: 1.2em;
+            color: #2721ff;
+            list-style: square;
+        }
 
-    <script src="/static/js/vendor.js" charset="utf-8"></script>
-    <script src="/static/js/alchemy.min.js"></script>
+        ul > li > a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    {% if txt %} {{txt}} {% endif %}
 
-    <div class="alchemy" id="alchemy"></div>
+    <h2>Neo4j &nbsp;&nbsp;---(migration)---> &nbsp;&nbsp;iGraph &nbsp;&nbsp;---(clustering)---> &nbsp;&nbsp;Alchemy.js</h2>
 
-    <script type="text/javascript">
-        alchemy.begin({
-        	dataSource: "/data/cars",
-        	nodeCaption: 'name',
-        	nodeMouseOver: 'name',
-            cluster: true,
-            clusterColours: ["#1B9E77","#D95F02","#7570B3","#E7298A","#66A61E","#E6AB02"]
-        })
-    </script>
+    <ul>
+        <li><a href="/graph/neo4j/1534234" onclick="return confirm('Are you 10000 % sure YOU WANNA DELETE AND RENEW WHOLE NEO4J?')">Neo4j - Reset database</a></li>
+        <li><a href="/graph/neo4j/0">Neo4j - Graph It!</a></li>
+        <li><a href="/graph/igraph/0">iGraph - Erdos_Renyi(80, 0.05)</a></li>
+        <li><a href="/graph/igraph/1">iGraph - K_Regular(80, 6)</a></li>
+        <li><a href="/graph/igraph/2" onclick="return confirm('This makes no sense. Enjoy?')">iGraph - Full(40)</a></li>
+        <li><a href="/graph/igraph/3">iGraph - Forest_Fire(80, 0.1)</a></li>
+        <li><a href="/graph/igraph/4">iGraph - Barabasi(80, 2)</a></li>
+    </ul>
 </body>
 </html>
