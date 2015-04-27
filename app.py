@@ -75,7 +75,8 @@ def data(data_type=None):
         # cars = gph.find("Car", "name", "renault", 150)
         # c = gph.cypher.execute("MATCH (p:Part)<-[r:HAS]-(c:Car) WHERE c.id IN
         # [10,15,22,545,346,500,123,54,78,456,345,333,444,222,111] RETURN r LIMIT 100;")
-        c = gph.cypher.execute("MATCH (c:Car)-[r:HAS]->(p:Part) RETURN r SKIP 1800 LIMIT 300 ")
+        # c = gph.cypher.execute("MATCH (c:Car)-[r:HAS]->(p:Part) RETURN r SKIP 1800 LIMIT 300 ")
+        c = gph.cypher.execute("MATCH (p:Part)<-[r:HAS]-(c:Car) WHERE p.id = 9 OR c.id = 100 OR c.id = 111 RETURN r")
         d = c.to_subgraph()
         # print str(dir(cars))
         dh = DrawHelper(d.nodes, d.relationships)
