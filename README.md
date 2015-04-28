@@ -1,4 +1,4 @@
-# Visualization of neo4j clustering #
+# Clustering and Visualization of Neo4j #
 
 ### What's inside: ###
 
