@@ -6,7 +6,8 @@
 * Python: Flask / py2neo / igraph
 * JS: Alchemy.js + Alchemys' dependencies
 
-questions/comments: grzegorz-wojcicki@outlook.com
+questions/comments/suggestions: grzegorz-wojcicki@outlook.com
+Yep, it's an academic project so don't expect clean code or design patterns
 
 ### Howto run: ###
 
@@ -24,6 +25,7 @@ python2 app.py
 # done
 ```
 
+### Neo4J Initialization (within code) ###
 ```neo4j
 
 // remove all
