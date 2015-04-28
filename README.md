@@ -7,6 +7,7 @@
 * JS: Alchemy.js + Alchemys' dependencies
 
 questions/comments/suggestions: grzegorz-wojcicki@outlook.com
+
 Yep, it's an academic project so don't expect clean code or design patterns
 
 ### Howto run: ###
