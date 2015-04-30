@@ -15,10 +15,11 @@ Yep, it's an academic project so don't expect clean code or design patterns
 ```bash
 # first of all unpack/run neo4j, then
 aptitude install libigraph-dev
+pip2 install virtualenv
 virtualenv alchemy-clustering
 cd alchemy-clustering
 source bin/activate
-git checkout https://YOUR_USER@bitbucket.org/rikkt0r/alchemy-clusters.git
+git clone git@bitbucket.org:rikkt0r/alchemy-clusters.git
 cd alchemy-clusters
 pip install -r requirements.txt
 # change config however you like
