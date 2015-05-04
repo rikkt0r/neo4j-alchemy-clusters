@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alchemy.js + Neo4J + Flask</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/vendor.css"/>
+    <link rel="stylesheet" href="/static/css/alchemy.min.css"/>
+
+    <script src="/static/js/vendor.js" charset="utf-8"></script>
+    <script src="/static/js/alchemy.min.js"></script>
+    <style>
+        #back {
+            position:absolute;
+            top: 10px;
+            left: 20px;
+            z-index: 1000;
+            background-color: #000;
+            color: #FFF;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="/" id="back"><< Back</a>
+
+    <div class="alchemy" id="alchemy"></div>
+
+    <script type="text/javascript">
+        alchemy.begin({
+        	dataSource: "{{ data_source }}",
+        	nodeCaption: 'name',
+        	nodeMouseOver: 'name',
+            cluster: true,
+            clusterColours: ["#1B9E77","#D95F02","#7570B3","#E7298A","#66A61E","#E6AB02"]
+        })
+    </script>
+</body>
+</html>
