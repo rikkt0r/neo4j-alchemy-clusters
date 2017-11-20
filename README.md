@@ -6,9 +6,7 @@
 * Python: Flask / py2neo / igraph
 * JS: Alchemy.js + Alchemys' dependencies
 
-questions/comments/suggestions: grzegorz-wojcicki@outlook.com
-
-Yep, it's an academic project so don't expect clean code or design patterns
+Yep, it's an old academic project so don't expect clean code or design patterns
 
 ### Howto run: ###
 
@@ -61,16 +59,16 @@ create index on :Part(id);
 ### Screens:
 
 #### Choices
-![screen_menu.png](https://bitbucket.org/repo/ny4eKo/images/3556457875-screen_menu.png)
+![Menu](readme/screen_menu.png)
 
 #### Neo4J Visualization
-![screen_neo4j.png](https://bitbucket.org/repo/ny4eKo/images/21534593-screen_neo4j.png)
+![Neo4J](readme/screen_neo4j.png)
 
 #### Erdor Renyi (random model)
-![screen_erdos_renyi.png](https://bitbucket.org/repo/ny4eKo/images/2983531410-screen_erdos_renyi.png)
+![Erdos Renyi](readme/erdos_renyi.png)
 
 #### K-regular (random model)
-![screen_k_regular.png](https://bitbucket.org/repo/ny4eKo/images/3519289190-screen_k_regular.png)
+![K-regular](readme/screen_k_regular.png)
 
 #### Forest Fire (random model)
-![screen_forest_fire.png](https://bitbucket.org/repo/ny4eKo/images/2869420693-screen_forest_fire.png)
+![Forest Fire](readme/screen_forest_fire.png)
