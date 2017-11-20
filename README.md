@@ -14,13 +14,13 @@ Yep, it's an old academic project so don't expect clean code or design patterns
 # first of all unpack/run neo4j, then
 aptitude install libigraph-dev
 pip2 install virtualenv
-git clone git@bitbucket.org:rikkt0r/alchemy-clusters.git
-cd alchemy-clusters
+> clone this repo
+cd neo4j-alchemy-clusters
 virtualenv -p /usr/bin/python2 env
 source env/bin/activate
 pip install -r requirements.txt
 # change config however you like
-python2 app.py
+python app.py
 # done
 ```
 
