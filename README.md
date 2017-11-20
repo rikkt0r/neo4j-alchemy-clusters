@@ -65,7 +65,7 @@ create index on :Part(id);
 ![Neo4J](readme/screen_neo4j.png)
 
 #### Erdor Renyi (random model)
-![Erdos Renyi](readme/erdos_renyi.png)
+![Erdos Renyi](readme/screen_erdos_renyi.png)
 
 #### K-regular (random model)
 ![K-regular](readme/screen_k_regular.png)
